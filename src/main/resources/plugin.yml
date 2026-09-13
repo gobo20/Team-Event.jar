@@ -1,0 +1,29 @@
+name: EventTeamPlugin
+version: '${project.version}'
+main: com.example.eventplugin.EventPlugin
+api-version: '1.21'
+author: Du
+description: Event Plugin - Team Wahl Blau/Rot mit Teleport & Kit
+
+commands:
+  event:
+    description: Event verwalten
+    usage: /event <Spieler> | /event set <red|blue>
+    permission: event.admin
+  blau:
+    description: Trete Blauem Team bei
+    usage: /blau
+  rot:
+    description: Trete Rotem Team bei
+    usage: /rot
+  blue:
+    description: Alias für /blau
+    usage: /blue
+  red:
+    description: Alias für /rot
+    usage: /red
+
+permissions:
+  event.admin:
+    description: Erlaubt /event zu nutzen
+    default: op
